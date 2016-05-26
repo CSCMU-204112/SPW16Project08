@@ -51,6 +51,7 @@ body{
 }
 .cssmenu {
 	float:left;
+	margin-left: 17%;
 	margin-top:11px;
 }
 .cssmenu ul li {
@@ -188,7 +189,7 @@ body{
 	-o-border-radius: 20px;
 }
 .wmuSliderPagination a.wmuActive {
-	background:#08080b;
+	background:#FF6100;
 	width:10px;
 	height:10px;
 }
@@ -369,7 +370,7 @@ p.m_2{
 .rating {
           overflow: hidden;
           display:block;
-          background:#d5d5d5;
+          background:#FFCE00;
           padding:2% 5%;
           font-size: 0.85em;
           color:#000;
@@ -408,7 +409,7 @@ p.m_2{
 }
 .list{
 	float: left;
-	background: #08080B;
+	background: #FF6100;
 	width: 50%;
 	padding: 0.5% 0;
 	text-align: center;
@@ -659,7 +660,7 @@ p.m_8{
 }
 /*--footer--*/
 .footer-top{
-	background:#08080b;
+	background:#FF6100;
 	padding: 5px 0;
 }
 .col_1_of_footer-top:first-child {
@@ -784,7 +785,7 @@ color: #000;}
 .dropdown input[type="checkbox"] { display: none }
 /*end-dropdown*/
 .footer-middle{
-	background:#d5d5d5;
+	background:#FFCE00;
 }
 .col_1_of_middle:first-child {
 	margin-left: 0;
@@ -826,7 +827,7 @@ color: #000;}
 	text-indent: -9999px;
 	outline: none;
 	cursor: pointer;
-	background: #08080B url("../images/s_arrow.png") no-repeat 11px 7px;
+	background: #FF6100 url("../images/s_arrow.png") no-repeat 11px 7px;
 	width: 30px;
 	height: 30px;
 	padding: 8px;
@@ -895,7 +896,7 @@ ul.sub_list2 li a:hover{
 	color:#000;
 }
 .copy{
-	background:#08080b;
+	background:#FF6100;
 	text-align:center;
 	padding:5px 0;
 }
@@ -1216,6 +1217,29 @@ p#login-form-remember label a:hover{
 	font-family: 'Open Sans', sans-serif;
 	border:1px solid #f0f0f0;
 }
+
+.register_account form input[type="email"], .register_account form select {
+	font-size: 0.8125em;
+	color: #999;
+	padding: 8px;
+	outline: none;
+	margin: 10px 0;
+	width: 95%;	
+	font-family: 'Open Sans', sans-serif;
+	border:1px solid #f0f0f0;
+}
+
+.register_account form input[type="password"], .register_account form select {
+	font-size: 0.8125em;
+	color: #999;
+	padding: 8px;
+	outline: none;
+	margin: 10px 0;
+	width: 95%;
+	font-family: 'Open Sans', sans-serif;
+	border:1px solid #f0f0f0;
+}
+
 .register_account form input[type="text"]:hover, .register_account form select:hover{
 	border:1px solid #DBDADA;
 }
@@ -1240,6 +1264,57 @@ button.grey {
 	border-top: none;
 	float:left;
 }
+
+.register_account form input[type="email"]:hover, .register_account form select:hover{
+	border:1px solid #DBDADA;
+}
+button.grey {
+	background: #555;
+	color: #FFF;
+	/* font-size: 0.8em; */
+	padding: 8px 20px;
+	/* border-radius: 5px; */
+	border-bottom: 4px solid #1D1C1C;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	cursor: pointer;
+	outline: none;
+	text-transform: uppercase;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	float:left;
+}
+
+.register_account form input[type="password"]:hover, .register_account form select:hover{
+	border:1px solid #DBDADA;
+}
+button.grey {
+	background: #555;
+	color: #FFF;
+	/* font-size: 0.8em; */
+	padding: 8px 20px;
+	/* border-radius: 5px; */
+	border-bottom: 4px solid #1D1C1C;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	cursor: pointer;
+	outline: none;
+	text-transform: uppercase;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	float:left;
+}
+
 button.grey:hover{
 	background:#FFAF02;
 	border-bottom: 4px solid #DF9A06;
@@ -1332,7 +1407,7 @@ ul.dc_pagination li a {
 .rating1{
 	overflow: hidden;
 	display: block;
-	background: #D5D5D5;
+	background: #FFCE00;
 	padding: 2.1% 1%;
 	font-size: 0.85em;
 	color: #000;
@@ -1341,7 +1416,7 @@ ul.dc_pagination li a {
 }
 .list2{
 	float: left;
-	background: #08080B;
+	background: #FF6100;
 	width: 53.5%;
 	padding: 0.2% 0;
 	text-align: center;
@@ -2096,7 +2171,7 @@ p.cart a:hover {
 		width:98.8%;
 	}
 	.cssmenu ul li a {
-		margin: 0px 5px;
+		margin: 0 px 5px;
 	}
 	.top_box {
 		padding: 10px;
