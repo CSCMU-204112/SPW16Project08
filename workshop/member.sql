@@ -34,12 +34,11 @@ SET default_with_oids = false;
 --
 
 CREATE TABLE member (
-    uid integer NOT NULL,
-    username text,
-    password text,
-    fname text,
-    lname text,
-    email text
+    username text NOT NULL PRIMARY KEY,
+    password text NOT NULL,
+    fname text NOT NULL,
+    lname text NOT NULL,
+    email text NOT NULL
 );
 
 
@@ -49,8 +48,8 @@ ALTER TABLE public.member OWNER TO postgres;
 -- Data for Name: member; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY member (uid, username, password, fname, lname, email) FROM stdin;
-1	fingger004	0404	Tanakorn	Onlamoon	tanakorn_o@cmu.ac.th
+COPY member (username, password, fname, lname, email) FROM stdin;
+fingger004	0404	Tanakorn	Onlamoon	tanakorn_o@cmu.ac.th
 \.
 
 
@@ -59,7 +58,7 @@ COPY member (uid, username, password, fname, lname, email) FROM stdin;
 --
 
 ALTER TABLE ONLY member
-    ADD CONSTRAINT member_pkey PRIMARY KEY (uid);
+    ADD CONSTRAINT member_pkey PRIMARY KEY (username);
 
 
 --
