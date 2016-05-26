@@ -1,0 +1,36 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        title Register
+    body
+        table
+            tr
+                th Member ID
+                th Username
+                th Password
+                th Firstname
+                th Lastname
+                th email
+            each val in members
+                tr
+                    td= val.uid
+                    td= val.username
+                    td= val.password
+                    td= val.fname
+                    td= val.lname
+                    td= val.email
+        form(method='post', action='member')
+            p
+                input(name='uid', type='number', placeholder='UID')
+            p
+                input(name='username', type='text', placeholder='Username')
+            p
+                input(name='password', type='password', placeholder='Password')
+            p
+                input(name='fname', type='text', placeholder='Firstname')
+            p
+                input(name='lname', type='text', placeholder='Lastname')
+            p
+                input(name='email', type='text', step='any', placeholder='email')
+            button(type='submit') Add
