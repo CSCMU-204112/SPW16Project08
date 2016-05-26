@@ -1,11 +1,7 @@
-var memberCtrl = require('./controllers/member.controllers');
+var indexCtrl = require('./controllers/index.controllers');
 
 module.exports = function(app){
-    app.get('/', function(req, res){
-        res.send('Working');
-    });
-
-    app.route('/member')
-    .get(memberCtrl.getAll)
-    .post(memberCtrl.insert);
+        app.get('/main', indexCtrl.main);
+        app.get('/shop', indexCtrl.shop);
 }
+
