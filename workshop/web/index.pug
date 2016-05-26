@@ -1,0 +1,1379 @@
+doctype html
+//
+  A Design by W3layouts
+  Author: W3layout
+  Author URL: http://w3layouts.com
+  License: Creative Commons Attribution 3.0 Unported
+  License URL: http://creativecommons.org/licenses/by/3.0/
+html
+  head
+    title Free Adidas Website Template | Home :: w3layouts
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    link(href='css/style.css', rel='stylesheet', type='text/css', media='all')
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800', rel='stylesheet', type='text/css')
+    script(type='text/javascript', src='js/jquery.min.js')
+    script(type='text/javascript').
+      $(document).ready(function() {
+      $(".dropdown img.flag").addClass("flagvisibility");
+      $(".dropdown dt a").click(function() {
+      $(".dropdown dd ul").toggle();
+      });
+      $(".dropdown dd ul li a").click(function() {
+      var text = $(this).html();
+      $(".dropdown dt a span").html(text);
+      $(".dropdown dd ul").hide();
+      $("#result").html("Selected value is: " + getSelectedValue("sample"));
+      });
+      function getSelectedValue(id) {
+      return $("#" + id).find("dt a span.value").html();
+      }
+      $(document).bind('click', function(e) {
+      var $clicked = $(e.target);
+      if (! $clicked.parents().hasClass("dropdown"))
+      $(".dropdown dd ul").hide();
+      });
+      $("#flagSwitcher").click(function() {
+      $(".dropdown img.flag").toggleClass("flagvisibility");
+      });
+      });
+    // start menu
+    link(href='css/megamenu.css', rel='stylesheet', type='text/css', media='all')
+    script(type='text/javascript', src='js/megamenu.js')
+    script.
+      $(document).ready(function(){$(".megamenu").megamenu();});
+    // end menu
+    // top scrolling
+    script(type='text/javascript', src='js/move-top.js')
+    script(type='text/javascript', src='js/easing.js')
+    script(type='text/javascript').
+      jQuery(document).ready(function($) {
+      $(".scroll").click(function(event){
+      event.preventDefault();
+      $('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+      });
+      });
+  body
+    .header-top
+      .wrap
+        .logo
+          a(href='index.html')
+            img(src='images/logo.png', alt='')
+        .cssmenu
+          ul
+            li.active
+              a(href='register.html') Sign up & Save
+            li
+              a(href='shop.html') Store Locator
+            li
+              a(href='login.html') My Account
+            li
+              a(href='checkout.html') CheckOut
+        ul.icon2.sub-icon2.profile_img
+          li
+            a.active-icon.c2(href='#')  
+            ul.sub-icon2.list
+              li
+                h3 Products
+                a(href='')
+              li
+                p
+                  | Lorem ipsum dolor sit amet, consectetuer  
+                  a(href='') adipiscing elit, sed diam
+        .clear
+    .header-bottom
+      .wrap
+        // start header menu
+        ul.megamenu.skyblue
+          li
+            a.color1(href='#') Home
+          li.grid
+            a.color2(href='#') Men
+            .megapanel
+              .row
+                .col1
+                  .h_nav
+                    h4 popular
+                    ul
+                      li
+                        a(href='shop.html') new arrivals
+                      li
+                        a(href='shop.html') men
+                      li
+                        a(href='shop.html') women
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') login
+                  .h_nav
+                    h4.top men
+                    ul
+                      li
+                        a(href='shop.html') new arrivals
+                      li
+                        a(href='shop.html') men
+                      li
+                        a(href='shop.html') women
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') style videos
+                .col1
+                  .h_nav
+                    h4 style zone
+                    ul
+                      li
+                        a(href='shop.html') men
+                      li
+                        a(href='shop.html') women
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') brands
+                .col1
+                .col1
+                .col1
+                .col1
+                img(src='images/nav_img.jpg', alt='')
+          li.active.grid
+            a.color4(href='#') Women
+            .megapanel
+              .row
+                .col1
+                  .h_nav
+                    h4 shop
+                    ul
+                      li
+                        a(href='shop.html') new arrivals
+                      li
+                        a(href='shop.html') men
+                      li
+                        a(href='shop.html') women
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') brands
+                .col1
+                  .h_nav
+                    h4 help
+                    ul
+                      li
+                        a(href='shop.html') trends
+                      li
+                        a(href='shop.html') sale
+                      li
+                        a(href='shop.html') style videos
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') style videos
+                .col1
+                  .h_nav
+                    h4 my company
+                    ul
+                      li
+                        a(href='shop.html') trends
+                      li
+                        a(href='shop.html') sale
+                      li
+                        a(href='shop.html') style videos
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') style videos
+                .col1
+                  .h_nav
+                    h4 account
+                    ul
+                      li
+                        a(href='shop.html') login
+                      li
+                        a(href='shop.html') create an account
+                      li
+                        a(href='shop.html') create wishlist
+                      li
+                        a(href='shop.html') my shopping bag
+                      li
+                        a(href='shop.html') brands
+                      li
+                        a(href='shop.html') create wishlist
+                .col1
+                  .h_nav
+                    h4 popular
+                    ul
+                      li
+                        a(href='shop.html') new arrivals
+                      li
+                        a(href='shop.html') men
+                      li
+                        a(href='shop.html') women
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') style videos
+                .col1
+                  .h_nav
+                    img(src='images/nav_img1.jpg', alt='')
+              .row
+                .col2
+                .col1
+                .col1
+                .col1
+                .col1
+          li
+            a.color5(href='#') Kids
+            .megapanel
+              .row
+                .col1
+                  .h_nav
+                    h4 popular
+                    ul
+                      li
+                        a(href='shop.html') new arrivals
+                      li
+                        a(href='shop.html') men
+                      li
+                        a(href='shop.html') women
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') login
+                  .h_nav
+                    h4.top man
+                    ul
+                      li
+                        a(href='shop.html') new arrivals
+                      li
+                        a(href='shop.html') men
+                      li
+                        a(href='shop.html') women
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') style videos
+                .col1
+                  .h_nav
+                    h4 style zone
+                    ul
+                      li
+                        a(href='shop.html') men
+                      li
+                        a(href='shop.html') women
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') brands
+                .col1
+                .col1
+                .col1
+                .col1
+                img(src='images/nav_img2.jpg', alt='')
+          li
+            a.color6(href='#') Sale
+            .megapanel
+              .row
+                .col1
+                  .h_nav
+                    h4 shop
+                    ul
+                      li
+                        a(href='shop.html') new arrivals
+                      li
+                        a(href='shop.html') men
+                      li
+                        a(href='shop.html') women
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') brands
+                  .h_nav
+                    h4.top my company
+                    ul
+                      li
+                        a(href='shop.html') trends
+                      li
+                        a(href='shop.html') sale
+                      li
+                        a(href='shop.html') style videos
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') style videos
+                .col1
+                  .h_nav
+                    h4 man
+                    ul
+                      li
+                        a(href='shop.html') new arrivals
+                      li
+                        a(href='shop.html') men
+                      li
+                        a(href='shop.html') women
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') style videos
+                .col1
+                  .h_nav
+                    h4 help
+                    ul
+                      li
+                        a(href='shop.html') trends
+                      li
+                        a(href='shop.html') sale
+                      li
+                        a(href='shop.html') style videos
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') style videos
+                .col1
+                  .h_nav
+                    h4 account
+                    ul
+                      li
+                        a(href='shop.html') login
+                      li
+                        a(href='shop.html') create an account
+                      li
+                        a(href='shop.html') create wishlist
+                      li
+                        a(href='shop.html') my shopping bag
+                      li
+                        a(href='shop.html') brands
+                      li
+                        a(href='shop.html') create wishlist
+                .col1
+                  .h_nav
+                    h4 my company
+                    ul
+                      li
+                        a(href='shop.html') trends
+                      li
+                        a(href='shop.html') sale
+                      li
+                        a(href='shop.html') style videos
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') style videos
+                .col1
+                  .h_nav
+                    h4 popular
+                    ul
+                      li
+                        a(href='shop.html') new arrivals
+                      li
+                        a(href='shop.html') men
+                      li
+                        a(href='shop.html') women
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') style videos
+              .row
+                .col2
+                .col1
+                .col1
+                .col1
+                .col1
+          li
+            a.color7(href='#') Customize
+            .megapanel
+              .row
+                .col1
+                  .h_nav
+                    h4 shop
+                    ul
+                      li
+                        a(href='shop.html') new arrivals
+                      li
+                        a(href='shop.html') men
+                      li
+                        a(href='shop.html') women
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') brands
+                .col1
+                  .h_nav
+                    h4 help
+                    ul
+                      li
+                        a(href='shop.html') trends
+                      li
+                        a(href='shop.html') sale
+                      li
+                        a(href='shop.html') style videos
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') style videos
+                .col1
+                  .h_nav
+                    h4 my company
+                    ul
+                      li
+                        a(href='shop.html') trends
+                      li
+                        a(href='shop.html') sale
+                      li
+                        a(href='shop.html') style videos
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') style videos
+                .col1
+                  .h_nav
+                    h4 account
+                    ul
+                      li
+                        a(href='shop.html') login
+                      li
+                        a(href='shop.html') create an account
+                      li
+                        a(href='shop.html') create wishlist
+                      li
+                        a(href='shop.html') my shopping bag
+                      li
+                        a(href='shop.html') brands
+                      li
+                        a(href='shop.html') create wishlist
+                .col1
+                  .h_nav
+                    h4 my company
+                    ul
+                      li
+                        a(href='shop.html') trends
+                      li
+                        a(href='shop.html') sale
+                      li
+                        a(href='shop.html') style videos
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') style videos
+                .col1
+                  .h_nav
+                    h4 popular
+                    ul
+                      li
+                        a(href='shop.html') new arrivals
+                      li
+                        a(href='shop.html') men
+                      li
+                        a(href='shop.html') women
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') style videos
+              .row
+                .col2
+                .col1
+                .col1
+                .col1
+                .col1
+          li
+            a.color8(href='#') Shop
+            .megapanel
+              .row
+                .col1
+                  .h_nav
+                    h4 style zone
+                    ul
+                      li
+                        a(href='shop.html') men
+                      li
+                        a(href='shop.html') women
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') brands
+                .col1
+                  .h_nav
+                    h4 popular
+                    ul
+                      li
+                        a(href='shop.html') new arrivals
+                      li
+                        a(href='shop.html') men
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') login
+                  .h_nav
+                    h4.top man
+                    ul
+                      li
+                        a(href='shop.html') new arrivals
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') style videos
+                  .col1
+                  .col1
+                  .col1
+                  .col1
+          li
+            a.color9(href='#') Football
+            .megapanel
+              .row
+                .col1
+                  .h_nav
+                    h4 shop
+                    ul
+                      li
+                        a(href='shop.html') new arrivals
+                      li
+                        a(href='shop.html') men
+                      li
+                        a(href='shop.html') women
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') brands
+                .col1
+                  .h_nav
+                    h4 help
+                    ul
+                      li
+                        a(href='shop.html') trends
+                      li
+                        a(href='shop.html') sale
+                      li
+                        a(href='shop.html') style videos
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') style videos
+                .col1
+                  .h_nav
+                    h4 my company
+                    ul
+                      li
+                        a(href='shop.html') trends
+                      li
+                        a(href='shop.html') sale
+                      li
+                        a(href='shop.html') style videos
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') style videos
+                .col1
+                  .h_nav
+                    h4 account
+                    ul
+                      li
+                        a(href='shop.html') login
+                      li
+                        a(href='shop.html') create an account
+                      li
+                        a(href='shop.html') create wishlist
+                      li
+                        a(href='shop.html') my shopping bag
+                      li
+                        a(href='shop.html') brands
+                      li
+                        a(href='shop.html') create wishlist
+                .col1
+                  .h_nav
+                    h4 my company
+                    ul
+                      li
+                        a(href='shop.html') trends
+                      li
+                        a(href='shop.html') sale
+                      li
+                        a(href='shop.html') style videos
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') style videos
+                .col1
+                  .h_nav
+                    h4 popular
+                    ul
+                      li
+                        a(href='shop.html') new arrivals
+                      li
+                        a(href='shop.html') men
+                      li
+                        a(href='shop.html') women
+                      li
+                        a(href='shop.html') accessories
+                      li
+                        a(href='shop.html') kids
+                      li
+                        a(href='shop.html') style videos
+              .row
+                .col2
+                .col1
+                .col1
+                .col1
+                .col1
+          li
+            a.color10(href='#') Running
+          li
+            a.color11(href='#') Originals
+          li
+            a.color12(href='#') Basketball
+        .clear
+    .index-banner
+      .wmuSlider.example1(style='height: 560px;')
+        .wmuSliderWrapper
+          article(style='position: relative; width: 100%; opacity: 1;')
+            .banner-wrap
+              .slider-left
+                img(src='images/banner1.jpg', alt='')
+              .slider-right
+                h1 Classic
+                h2 White
+                p Lorem ipsum dolor sit amet
+                .btn
+                  a(href='shop.html') Shop Now
+              .clear
+          article(style='position: absolute; width: 100%; opacity: 0;')
+            .banner-wrap
+              .slider-left
+                img(src='images/banner2.jpg', alt='')
+              .slider-right
+                h1 Classic
+                h2 White
+                p Lorem ipsum dolor sit amet
+                .btn
+                  a(href='shop.html') Shop Now
+              .clear
+          article(style='position: absolute; width: 100%; opacity: 0;')
+            .banner-wrap
+              .slider-left
+                img(src='images/banner1.jpg', alt='')
+              .slider-right
+                h1 Classic
+                h2 White
+                p Lorem ipsum dolor sit amet
+                .btn
+                  a(href='shop.html') Shop Now
+              .clear
+          article(style='position: absolute; width: 100%; opacity: 0;')
+            .banner-wrap
+              .slider-left
+                img(src='images/banner2.jpg', alt='')
+              .slider-right
+                h1 Classic
+                h2 White
+                p Lorem ipsum dolor sit amet
+                .btn
+                  a(href='shop.html') Shop Now
+              .clear
+          article(style='position: absolute; width: 100%; opacity: 0;')
+            .banner-wrap
+              .slider-left
+                img(src='images/banner1.jpg', alt='')
+              .slider-right
+                h1 Classic
+                h2 White
+                p Lorem ipsum dolor sit amet
+                .btn
+                  a(href='shop.html') Shop Now
+              .clear
+        a.wmuSliderPrev Previous
+        a.wmuSliderNext Next
+        ul.wmuSliderPagination
+          li
+            a(href='#') 0
+          li
+            a(href='#') 1
+          li
+            a.wmuActive(href='#') 2
+          li
+            a(href='#') 3
+          li
+            a(href='#') 4
+        a.wmuSliderPrev Previous
+        a.wmuSliderNext Next
+        ul.wmuSliderPagination
+          li
+            a.wmuActive(href='#') 0
+          li
+            a(href='#') 1
+          li
+            a(href='#') 2
+          li
+            a(href='#') 3
+          li
+            a(href='#') 4
+      script(src='js/jquery.wmuSlider.js')
+      script(type='text/javascript', src='js/modernizr.custom.min.js')
+      script.
+        $('.example1').wmuSlider();
+    .main
+      .wrap
+        .content-top
+          .lsidebar.span_1_of_c1
+            p Lorem ipsum dolor sit amet, consectetuer adipiscing
+          .cont.span_2_of_c1
+            .social
+              ul
+                li.facebook
+                  a(href='#')
+                    span  
+                  .radius
+                    img(src='images/radius.png')
+                    a(href='#')  
+                  .border.hide
+                    p.num 1.51K
+            .social
+              ul
+                li.twitter
+                  a(href='#')
+                    span  
+                  .radius
+                    img(src='images/radius.png')
+                  .border.hide
+                    p.num 1.51K
+            .social
+              ul
+                li.google
+                  a(href='#')
+                    span  
+                  .radius
+                    img(src='images/radius.png')
+                  .border.hide
+                    p.num 1.51K
+            .social
+              ul
+                li.dot
+                  a(href='#')
+                    span  
+                  .radius
+                    img(src='images/radius.png')
+                  .border.hide
+                    p.num 1.51K
+            .clear  
+          .clear
+        .content-bottom
+          .box1
+            .col_1_of_3.span_1_of_3
+              a(href='single.html')
+                .view.view-fifth
+                  .top_box
+                    h3.m_1 Lorem ipsum dolor sit amet
+                    p.m_2 Lorem ipsum
+                    .grid_img
+                      .css3
+                        img(src='images/pic.jpg', alt='')
+                      .mask
+                        .info Quick View
+                    .price £480
+                span.rating
+                  input#rating-input-1-5.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star1(for='rating-input-1-5')
+                  input#rating-input-1-4.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star1(for='rating-input-1-4')
+                  input#rating-input-1-3.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star1(for='rating-input-1-3')
+                  input#rating-input-1-2.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star(for='rating-input-1-2')
+                  input#rating-input-1-1.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star(for='rating-input-1-1')
+                  |                 (45)
+                ul.list
+                  li
+                    img(src='images/plus.png', alt='')
+                    ul.icon1.sub-icon1.profile_img
+                      li
+                        a.active-icon.c1(href='#') Add To Bag 
+                        ul.sub-icon1.list
+                          li
+                            h3 sed diam nonummy
+                            a(href='')
+                          li
+                            p
+                              | Lorem ipsum dolor sit amet, consectetuer  
+                              a(href='') adipiscing elit, sed diam
+                .clear
+            .col_1_of_3.span_1_of_3
+              a(href='single.html')
+                .view.view-fifth
+                  .top_box
+                    h3.m_1 Lorem ipsum dolor sit amet
+                    p.m_2 Lorem ipsum
+                    .grid_img
+                      .css3
+                        img(src='images/pic1.jpg', alt='')
+                      .mask
+                        .info Quick View
+                    .price £480
+                span.rating
+                  input#rating-input-1-5.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star1(for='rating-input-1-5')
+                  input#rating-input-1-4.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star1(for='rating-input-1-4')
+                  input#rating-input-1-3.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star1(for='rating-input-1-3')
+                  input#rating-input-1-2.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star(for='rating-input-1-2')
+                  input#rating-input-1-1.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star(for='rating-input-1-1')
+                  |                 (45)
+                ul.list
+                  li
+                    img(src='images/plus.png', alt='')
+                    ul.icon1.sub-icon1.profile_img
+                      li
+                        a.active-icon.c1(href='#') Add To Bag 
+                        ul.sub-icon1.list
+                          li
+                            h3 sed diam nonummy
+                            a(href='')
+                          li
+                            p
+                              | Lorem ipsum dolor sit amet, consectetuer  
+                              a(href='') adipiscing elit, sed diam
+                .clear
+            .col_1_of_3.span_1_of_3
+              a(href='single.html')
+                .view.view-fifth
+                  .top_box
+                    h3.m_1 Lorem ipsum dolor sit amet
+                    p.m_2 Lorem ipsum
+                    .grid_img
+                      .css3
+                        img(src='images/pic2.jpg', alt='')
+                      .mask
+                        .info Quick View
+                    .price £480
+                span.rating
+                  input#rating-input-1-5.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star1(for='rating-input-1-5')
+                  input#rating-input-1-4.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star1(for='rating-input-1-4')
+                  input#rating-input-1-3.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star1(for='rating-input-1-3')
+                  input#rating-input-1-2.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star(for='rating-input-1-2')
+                  input#rating-input-1-1.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star(for='rating-input-1-1')
+                  |                 (45)
+                ul.list
+                  li
+                    img(src='images/plus.png', alt='')
+                    ul.icon1.sub-icon1.profile_img
+                      li
+                        a.active-icon.c1(href='#') Add To Bag 
+                        ul.sub-icon1.list
+                          li
+                            h3 sed diam nonummy
+                            a(href='')
+                          li
+                            p
+                              | Lorem ipsum dolor sit amet, consectetuer  
+                              a(href='') adipiscing elit, sed diam
+                .clear
+            .clear
+          .box1
+            .col_1_of_3.span_1_of_3
+              a(href='single.html')
+                .view.view-fifth
+                  .top_box
+                    h3.m_1 Lorem ipsum dolor sit amet
+                    p.m_2 Lorem ipsum
+                    .grid_img
+                      .css3
+                        img(src='images/pic3.jpg', alt='')
+                      .mask
+                        .info Quick View
+                    .price £480
+                span.rating
+                  input#rating-input-1-5.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star1(for='rating-input-1-5')
+                  input#rating-input-1-4.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star1(for='rating-input-1-4')
+                  input#rating-input-1-3.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star1(for='rating-input-1-3')
+                  input#rating-input-1-2.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star(for='rating-input-1-2')
+                  input#rating-input-1-1.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star(for='rating-input-1-1')
+                  |                 (45)
+                ul.list
+                  li
+                    img(src='images/plus.png', alt='')
+                    ul.icon1.sub-icon1.profile_img
+                      li
+                        a.active-icon.c1(href='#') Add To Bag 
+                        ul.sub-icon1.list
+                          li
+                            h3 sed diam nonummy
+                            a(href='')
+                          li
+                            p
+                              | Lorem ipsum dolor sit amet, consectetuer  
+                              a(href='') adipiscing elit, sed diam
+                .clear
+            .col_1_of_3.span_1_of_3
+              a(href='single.html')
+                .view.view-fifth
+                  .top_box
+                    h3.m_1 Lorem ipsum dolor sit amet
+                    p.m_2 Lorem ipsum
+                    .grid_img
+                      .css3
+                        img(src='images/pic4.jpg', alt='')
+                      .mask
+                        .info Quick View
+                    .price £480
+                span.rating
+                  input#rating-input-1-5.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star1(for='rating-input-1-5')
+                  input#rating-input-1-4.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star1(for='rating-input-1-4')
+                  input#rating-input-1-3.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star1(for='rating-input-1-3')
+                  input#rating-input-1-2.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star(for='rating-input-1-2')
+                  input#rating-input-1-1.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star(for='rating-input-1-1')
+                  |                 (45)
+                ul.list
+                  li
+                    img(src='images/plus.png', alt='')
+                    ul.icon1.sub-icon1.profile_img
+                      li
+                        a.active-icon.c1(href='#') Add To Bag 
+                        ul.sub-icon1.list
+                          li
+                            h3 sed diam nonummy
+                            a(href='')
+                          li
+                            p
+                              | Lorem ipsum dolor sit amet, consectetuer  
+                              a(href='') adipiscing elit, sed diam
+                .clear
+            .col_1_of_3.span_1_of_3
+              a(href='single.html')
+                .view.view-fifth
+                  .top_box
+                    h3.m_1 Lorem ipsum dolor sit amet
+                    p.m_2 Lorem ipsum
+                    .grid_img
+                      .css3
+                        img(src='images/pic5.jpg', alt='')
+                      .mask
+                        .info Quick View
+                    .price £480
+                span.rating
+                  input#rating-input-1-5.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star1(for='rating-input-1-5')
+                  input#rating-input-1-4.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star1(for='rating-input-1-4')
+                  input#rating-input-1-3.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star1(for='rating-input-1-3')
+                  input#rating-input-1-2.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star(for='rating-input-1-2')
+                  input#rating-input-1-1.rating-input(type='radio', name='rating-input-1')
+                  label.rating-star(for='rating-input-1-1')
+                  |                 (45)
+                ul.list
+                  li
+                    img(src='images/plus.png', alt='')
+                    ul.icon1.sub-icon1.profile_img
+                      li
+                        a.active-icon.c1(href='#') Add To Bag 
+                        ul.sub-icon1.list
+                          li
+                            h3 sed diam nonummy
+                            a(href='')
+                          li
+                            p
+                              | Lorem ipsum dolor sit amet, consectetuer  
+                              a(href='') adipiscing elit, sed diam
+                .clear
+            .clear
+    .footer
+      .footer-top
+        .wrap
+          .col_1_of_footer-top.span_1_of_footer-top
+            ul.f_list
+              li
+                img(src='images/f_icon.png', alt='')
+                span.delivery Free delivery on all orders over £100*
+          .col_1_of_footer-top.span_1_of_footer-top
+            ul.f_list
+              li
+                img(src='images/f_icon1.png', alt='')
+                span.delivery
+                  | Customer Service :
+                  span.orange  (800) 000-2587 (freephone)
+          .col_1_of_footer-top.span_1_of_footer-top
+            ul.f_list
+              li
+                img(src='images/f_icon2.png', alt='')
+                span.delivery Fast delivery & free returns
+          .clear
+      .footer-middle
+        .wrap
+          .section.group
+            .col_1_of_middle.span_1_of_middle
+              dl#sample.dropdown
+                dt
+                  a(href='#')
+                    span Please Select a Country
+                dd
+                  ul
+                    li
+                      a(href='#')
+                        | Australia
+                        img.flag(src='images/as.png', alt='')
+                        span.value AS
+                    li
+                      a(href='#')
+                        | Sri Lanka
+                        img.flag(src='images/srl.png', alt='')
+                        span.value SL
+                    li
+                      a(href='#')
+                        | Newziland
+                        img.flag(src='images/nz.png', alt='')
+                        span.value NZ
+                    li
+                      a(href='#')
+                        | Pakistan
+                        img.flag(src='images/pk.png', alt='')
+                        span.value Pk
+                    li
+                      a(href='#')
+                        | United Kingdom
+                        img.flag(src='images/uk.png', alt='')
+                        span.value UK
+                    li
+                      a(href='#')
+                        | United States
+                        img.flag(src='images/us.png', alt='')
+                        span.value US
+            .col_1_of_middle.span_1_of_middle
+              ul.f_list1
+                li
+                  span.m_8 Sign up for email and Get 15% off
+                  .search
+                    input.textbox(type='text', name='s', value='Search', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = 'Search';}")
+                    input#submit(type='submit', value='Subscribe', name='submit')
+                    #response  
+                  .clear
+            .clear
+      .footer-bottom
+        .wrap
+          .section.group
+            .col_1_of_5.span_1_of_5
+              h3.m_9 Shop
+              ul.sub_list
+                h4.m_10 Men
+                li
+                  a(href='shop.html') Men's Shoes
+                li
+                  a(href='shop.html') Men's Clothing
+                li
+                  a(href='shop.html') Men's Accessories
+              ul.sub_list
+                h4.m_10 Women
+                li
+                  a(href='shop.html') Women's Shoes
+                li
+                  a(href='shop.html') Women's Clothing
+                li
+                  a(href='shop.html') Women's Accessories
+              ul.sub_list
+                h4.m_10 Kids
+                li
+                  a(href='shop.html') Kids Shoes
+                li
+                  a(href='shop.html') Kids Clothing
+                li
+                  a(href='shop.html') Kids Accessories
+              ul.sub_list
+                h4.m_10 style
+                li
+                  a(href='shop.html') Porsche Design Sport
+                li
+                  a(href='shop.html') Porsche Design Shoes
+                li
+                  a(href='shop.html') Porsche Design Clothing
+              ul.sub_list
+                h4.m_10 Adidas Neo Label
+                li
+                  a(href='shop.html') Adidas NEO Shoes
+                li
+                  a(href='shop.html') Adidas NEO Clothing
+              ul.sub_list1
+                h4.m_10 Customise
+                li
+                  a(href='shop.html') mi adidas
+                li
+                  a(href='shop.html') mi team
+                li
+                  a(href='shop.html') new arrivals
+            .col_1_of_5.span_1_of_5
+              h3.m_9 Sports
+              ul.list1
+                li
+                  a(href='shop.html') Basketball
+                li
+                  a(href='shop.html') Football
+                li
+                  a(href='shop.html') Football Boots
+                li
+                  a(href='shop.html') Predator
+                li
+                  a(href='shop.html') F50
+                li
+                  a(href='shop.html') Football Clothing
+                li
+                  a(href='shop.html') Golf
+                li
+                  a(href='shop.html') Golf Shoes
+                li
+                  a(href='shop.html') Golf Clothing
+                li
+                  a(href='shop.html') Outdoor
+                li
+                  a(href='shop.html') Outdoor Shoes
+                li
+                  a(href='shop.html') Outdoor Clothing
+                li
+                  a(href='shop.html') Rugby
+                li
+                  a(href='shop.html') Running
+                li
+                  a(href='shop.html') Running Shoes
+                li
+                  a(href='shop.html') Boost
+                li
+                  a(href='shop.html') Supernova
+                li
+                  a(href='shop.html') Running Clothing
+                li
+                  a(href='shop.html') Swimming
+                li
+                  a(href='shop.html') Tennis
+                li
+                  a(href='shop.html') Tennis Shoes
+                li
+                  a(href='shop.html') Tennis Clothing
+                li
+                  a(href='shop.html') Training
+                li
+                  a(href='shop.html') Training Shoes
+                li
+                  a(href='shop.html') Training Clothing
+                li
+                  a(href='shop.html') Training Accessories
+                li
+                  a(href='shop.html') miCoach
+                li
+                  a(href='shop.html') All Sports
+            .col_1_of_5.span_1_of_5
+              h3.m_9 Originals
+              ul.list1
+                li
+                  a(href='shop.html') Originals Shoes
+                li
+                  a(href='shop.html') Gazelle
+                li
+                  a(href='shop.html') Samba
+                li
+                  a(href='shop.html') LA Trainer
+                li
+                  a(href='shop.html') Superstar
+                li
+                  a(href='shop.html') SL
+                li
+                  a(href='shop.html') ZX
+                li
+                  a(href='shop.html') Campus
+                li
+                  a(href='shop.html') Spezial
+                li
+                  a(href='shop.html') Dragon
+                li
+                  a(href='shop.html') Originals Clothing
+                li
+                  a(href='shop.html') Firebird
+                li
+                  a(href='shop.html') Originals Accessories
+                li
+                  a(href='shop.html') Men's Originals
+                li
+                  a(href='shop.html') Women's Originals
+                li
+                  a(href='shop.html') Kid's Originals
+                li
+                  a(href='shop.html') All Originals
+            .col_1_of_5.span_1_of_5
+              h3.m_9 Product Types
+              ul.list1
+                li
+                  a(href='shop.html') Shirts
+                li
+                  a(href='shop.html') Pants & Tights
+                li
+                  a(href='shop.html') Shirts
+                li
+                  a(href='shop.html') Jerseys
+                li
+                  a(href='shop.html') Hoodies & Track Tops
+                li
+                  a(href='shop.html') Bags
+                li
+                  a(href='shop.html') Jackets
+                li
+                  a(href='shop.html') Hi Tops
+                li
+                  a(href='shop.html') SweatShirts
+                li
+                  a(href='shop.html') Socks
+                li
+                  a(href='shop.html') Swimwear
+                li
+                  a(href='shop.html') Tracksuits
+                li
+                  a(href='shop.html') Hats
+                li
+                  a(href='shop.html') Football Boots
+                li
+                  a(href='shop.html') Other Accessories
+                li
+                  a(href='shop.html') Sandals & Flip Flops
+                li
+                  a(href='shop.html') Skirts & Dresseses
+                li
+                  a(href='shop.html') Balls
+                li
+                  a(href='shop.html') Watches
+                li
+                  a(href='shop.html') Fitness Equipment
+                li
+                  a(href='shop.html') Eyewear
+                li
+                  a(href='shop.html') Gloves
+                li
+                  a(href='shop.html') Sports Bras
+                li
+                  a(href='shop.html') Scarves
+                li
+                  a(href='shop.html') Shinguards
+                li
+                  a(href='shop.html') Underwear
+            .col_1_of_5.span_1_of_5
+              h3.m_9 Support
+              ul.list1
+                li
+                  a(href='shop.html') Store finder
+                li
+                  a(href='shop.html') Customer Service
+                li
+                  a(href='shop.html') FAQ
+                li
+                  a(href='shop.html') Online Shop Contact Us
+                li
+                  a(href='shop.html') about adidas Products
+                li
+                  a(href='shop.html') Size Charts 
+                li
+                  a(href='shop.html') Ordering 
+                li
+                  a(href='shop.html') Payment 
+                li
+                  a(href='shop.html') Shipping 
+                li
+                  a(href='shop.html') Returning
+                li
+                  a(href='shop.html') Using out Site
+                li
+                  a(href='shop.html') Delivery Terms
+                li
+                  a(href='shop.html') Site Map
+                li
+                  a(href='shop.html') Gift Card
+              ul.sub_list2
+                h4.m_10 Company Info
+                li
+                  a(href='shop.html') About Us
+                li
+                  a(href='shop.html') Careers
+                li
+                  a(href='shop.html') Press
+            .clear
+      .copy
+        .wrap
+          p
+            | © All rights reserved | Template by 
+            a(href='http://w3layouts.com/')  W3Layouts
+    script(type='text/javascript').
+      $(document).ready(function() {
+      var defaults = {
+      containerID: 'toTop', // fading element id
+      containerHoverID: 'toTopHover', // fading element hover id
+      scrollSpeed: 1200,
+      easingType: 'linear'
+      };
+      $().UItoTop({ easingType: 'easeOutQuart' });
+      });
+    a#toTop(href='#', style='display: block;')
+      span#toTopHover(style='opacity: 1;')
