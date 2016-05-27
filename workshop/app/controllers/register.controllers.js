@@ -2,9 +2,7 @@ var pgp = require('pg-promise')();
 const dbconfig = require('../../config/admin');
 var db = pgp(dbconfig);
 
-exports.register = function(req, res) {
-    res.render('register');
-}
+
 
 exports.createUser = function(req, res) {
 
@@ -21,7 +19,8 @@ exports.createUser = function(req, res) {
     
     .then(function(data) {
         console.log('[ REGIST SUCCESS ]');
-        res.redirect('/login');_
+        res.redirect('/login');
+
     })
 
     .catch(function(error) {
@@ -40,7 +39,8 @@ exports.checkLogin = function(req, res) {
 
     .then(function(data) {
         console.log('[ LOGIN SUCCESS AS:', data[0].username,']');
-        res.redirect('/');
+        res.redirect('/in');
+
     })
 
     .catch(function(error) {

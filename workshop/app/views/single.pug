@@ -7,7 +7,11 @@ doctype html
   License URL: http://creativecommons.org/licenses/by/3.0/
 html
   head
+<<<<<<< HEAD
     title ...::On the Buy::...
+=======
+    title OntheBuy
+>>>>>>> 3d399657d42f491beae8b5272fcc877837f9910f
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
     meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
     link(href='css/style.css', rel='stylesheet', type='text/css', media='all')
@@ -85,19 +89,35 @@ html
     .header-top
       .wrap
         .logo
+<<<<<<< HEAD
           //- a(href='index.html')
           //-   img(src='images/logo.png', alt='')
           h1 ON THE BUY 
+=======
+            img(src='images/logo.png', alt='')
+>>>>>>> 3d399657d42f491beae8b5272fcc877837f9910f
         .cssmenu
           ul
             li.active
-              a(href='/') Home
+              if (type == true)
+                a(href='/') Home
+              else
+                a(href='/in') Home
             li
-              a(href='/shop') Catalog
+              if (type == true)
+                a(href='/shop') Catalog
+              else
+                a(href='/shop/in') Catalog
             li
-              a(href='/register') Register
+              if (type == true)
+                a(href='/register') Register
+              else
+                a(href='/register/in') Register
             li
-              a(href='/login') Login 
+              if (type == true)
+                a(href='/login') Login 
+              else
+                a(href='/logout') Logout
         .clear
     .header-bottom
       .wrap
