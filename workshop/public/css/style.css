@@ -51,7 +51,11 @@ body{
 }
 .cssmenu {
 	float:left;
+<<<<<<< HEAD
 	margin-left: 16%;
+=======
+	margin-left: 17%;
+>>>>>>> 80201fc21a62b3328be562a7188184978fe96537
 	margin-top:11px;
 }
 .cssmenu ul li {

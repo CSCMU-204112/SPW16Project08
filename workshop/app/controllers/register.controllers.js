@@ -2,6 +2,12 @@ var pgp = require('pg-promise')();
 const dbconfig = require('../../config/admin');
 var db = pgp(dbconfig);
 
+<<<<<<< HEAD
+=======
+exports.register = function(req, res) {
+    res.render('register');
+}
+>>>>>>> 80201fc21a62b3328be562a7188184978fe96537
 
 exports.createUser = function(req, res) {
 
@@ -18,7 +24,11 @@ exports.createUser = function(req, res) {
     
     .then(function(data) {
         console.log('[ REGIST SUCCESS ]');
+<<<<<<< HEAD
         res.redirect('/login');
+=======
+        res.redirect('/login');_
+>>>>>>> 80201fc21a62b3328be562a7188184978fe96537
     })
 
     .catch(function(error) {
@@ -37,7 +47,11 @@ exports.checkLogin = function(req, res) {
 
     .then(function(data) {
         console.log('[ LOGIN SUCCESS AS:', data[0].username,']');
+<<<<<<< HEAD
         res.redirect('/in');
+=======
+        res.redirect('/');
+>>>>>>> 80201fc21a62b3328be562a7188184978fe96537
     })
 
     .catch(function(error) {
