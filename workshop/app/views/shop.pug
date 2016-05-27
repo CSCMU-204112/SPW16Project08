@@ -65,21 +65,33 @@ html
     .header-top
       .wrap
         .logo
-          a(href='/')
             img(src='images/logo.png', alt='')
         .cssmenu
           ul
             li.active
-              a(href='/') Home
+              if (type == true)
+                a(href='/') Home
+              else
+                a(href='/in') Home
             li
-              a(href='/shop') Catalog
+              if (type == true)
+                a(href='/shop') Catalog
+              else
+                a(href='/shop/in') Catalog
             li
-              a(href='/register') Register
+              if (type == true)
+                a(href='/register') Register
+              else
+                a(href='/register/in') Register
             li
-              a(href='/login') Login 
+              if (type == true)
+                a(href='/login') Login 
+              else
+                a(href='/logout') Logout
         .clear
     .header-bottom
       .wrap
+        
     .login
       .wrap
         .cont.span_2_of_3

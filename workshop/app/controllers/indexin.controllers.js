@@ -4,30 +4,30 @@ var db = pgp(dbconfig);
 
 exports.main = function(req, res){
     res.render('index', {
-        type: true
+        type: false
     });
 }
 
 exports.shop = function(req, res){
     res.render('shop', {
-        type: true
+        type: false
     });
 }
 
 exports.login = function(req, res){
     res.render('login', {
-        type: true
+        type: false
     });
 }
 
 exports.single = function(req, res){
     res.render('single', {
-        type: true
+        type: false
     });
 }
 
 exports.register = function(req, res) {
     res.render('register', {
-        type: true
+        type: false
     });
 }
